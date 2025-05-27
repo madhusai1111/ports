@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Stroke Risk Prediction - Madhu Sai</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+        .project-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 20px;
+        }
+        .project-content {
+            padding: 80px 0;
+            background: white;
+        }
+        .project-section {
+            margin-bottom: 60px;
+        }
+        .project-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .project-section p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .tech-list {
+            list-style: none;
+            padding: 0;
+        }
+        .tech-list li {
+            padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+            font-size: 16px;
+            color: #555;
+        }
+        .tech-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+        .project-buttons {
+            display: flex;
+            gap: 20px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        .btn-demo {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ffd700 100%);
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn-demo:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 107, 107, 0.4);
+        }
+        .btn-back {
+            background: transparent;
+            color: #667eea;
+            padding: 15px 35px;
+            text-decoration: none;
+            border: 2px solid #667eea;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn-back:hover {
+            background: #667eea;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <section class="project-hero">
+        <div class="container">
+            <h1>Heart Stroke Risk Prediction System</h1>
+            <p>Using Machine Learning for Healthcare Innovation</p>
+        </div>
+    </section>
+
+    <section class="project-content">
+        <div class="container">
+            <div class="project-section">
+                <h2>Project Overview</h2>
+                <p>Predicting heart attacks is currently one of the most challenging challenges in the medical industry. Heart disease is one of the leading causes of mortality worldwide. Early detection and preventive measures can significantly reduce risks and improve patient outcomes.</p>
+                
+                <p>This project aims to develop a predictive model that determines the presence of heart disease based on various medical attributes. Using machine learning techniques, specifically Logistic Regression, the model analyzes key clinical parameters such as age, sex, chest pain type, heart rate, exercise-induced angina, ST depression, and thalassemia to assess the likelihood of heart disease.</p>
+                
+                <p>By leveraging Python and a user-friendly frontend, the system enables early diagnosis, timely intervention, and better healthcare efficiency. The testing results show that, when compared to other ML algorithms used, the Logistic Regression has the best accuracy, 85.54%.</p>
+            </div>
+
+            <div class="project-section">
+                <h2>Technologies Used</h2>
+                
+                <h3 style="color: #667eea; margin: 30px 0 15px 0;">Frontend:</h3>
+                <ul class="tech-list">
+                    <li>HTML5, CSS3, JavaScript</li>
+                    <li>React.js</li>
+                </ul>
+
+                <h3 style="color: #667eea; margin: 30px 0 15px 0;">Backend:</h3>
+                <ul class="tech-list">
+                    <li>Python</li>
+                    <li>Flask (for API integration)</li>
+                </ul>
+
+                <h3 style="color: #667eea; margin: 30px 0 15px 0;">Machine Learning Model:</h3>
+                <ul class="tech-list">
+                    <li>Logistic Regression (for heart disease prediction)</li>
+                    <li>Pandas, NumPy (for data processing)</li>
+                    <li>Scikit-Learn (for model implementation)</li>
+                </ul>
+            </div>
+
+            <div class="project-buttons">
+                <a href="https://heart-stroke-risk-prediction-system.vercel.app/" class="btn-demo" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+                <a href="index.html" class="btn-back">
+                    <i class="fas fa-arrow-left"></i> Back to Portfolio
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

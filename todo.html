@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Application - Madhu Sai</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-hero {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+        .project-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 20px;
+        }
+        .project-content {
+            padding: 80px 0;
+            background: white;
+        }
+        .project-section {
+            margin-bottom: 60px;
+        }
+        .project-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .project-section p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .tech-list {
+            list-style: none;
+            padding: 0;
+        }
+        .tech-list li {
+            padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+            font-size: 16px;
+            color: #555;
+        }
+        .tech-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #4facfe;
+            font-weight: bold;
+        }
+        .project-buttons {
+            display: flex;
+            gap: 20px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        .btn-demo {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn-demo:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(79, 172, 254, 0.4);
+        }
+        .btn-back {
+            background: transparent;
+            color: #4facfe;
+            padding: 15px 35px;
+            text-decoration: none;
+            border: 2px solid #4facfe;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn-back:hover {
+            background: #4facfe;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <section class="project-hero">
+        <div class="container">
+            <h1>To-Do Application</h1>
+            <p>Efficient Task Management Made Simple</p>
+        </div>
+    </section>
+
+    <section class="project-content">
+        <div class="container">
+            <div class="project-section">
+                <h2>Project Overview</h2>
+                <p>The ToDo Application is a simple yet effective task management tool developed to help users organize their daily routines and boost productivity. It offers a clean and responsive user interface that allows users to easily add, update, delete, and mark tasks as completed. Designed with usability in mind, the application ensures a smooth experience across both desktop and mobile devices.</p>
+                
+                <p>This project demonstrates core functionality like CRUD operations and efficient state handling, using technologies such as HTML, CSS, and JavaScript. In more advanced versions, React.js was used for component-based architecture and better state management, while backend support with Node.js and MongoDB enabled persistent data storage and user authentication.</p>
+            </div>
+
+            <div class="project-section">
+                <h2>Technologies Used</h2>
+                
+                <h3 style="color: #4facfe; margin: 30px 0 15px 0;">Frontend:</h3>
+                <ul class="tech-list">
+                    <li>HTML5, CSS3, JavaScript</li>
+                    <li>React.js</li>
+                </ul>
+
+                <h3 style="color: #4facfe; margin: 30px 0 15px 0;">Backend:</h3>
+                <ul class="tech-list">
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                </ul>
+            </div>
+
+            <div class="project-buttons">
+                <a href="https://todo-application-one-lac.vercel.app/" class="btn-demo" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> Try the App
+                </a>
+                <a href="index.html" class="btn-back">
+                    <i class="fas fa-arrow-left"></i> Back to Portfolio
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
